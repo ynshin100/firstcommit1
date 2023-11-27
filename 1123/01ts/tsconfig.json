@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "CommonJS",
+    "outDir": "dist",
+    "strict": false,
+    "moduleDetection": "force", //서로다른 파일에서 동일한 이름 들어가도 된다.
+    "esModuleInterop": true,
+    "moduleResolution": "Node",
+    "baseUrl": ".",
+    "paths": { "*": ["src/*"] },
+    "sourceMap": true,
+    "downlevelIteration": true,
+    "noImplicitAny": true,
+    "allowJs": true,
+    "strictPropertyInitialization": false
+  },
+  "ts-node": {
+    "esm": false
+  },
+  "include": ["src"]
+}
