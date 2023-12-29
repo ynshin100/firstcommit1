@@ -1,0 +1,19 @@
+
+
+cmd 명령 코드
+
+
+Microsoft Windows [Version 10.0.19042.631]
+(c) 2020 Microsoft Corporation. All rights reserved.
+
+C:\Users\EZEN>cd desktop
+
+C:\Users\EZEN\Desktop>cd 1208
+
+C:\Users\EZEN\Desktop\1208>cd 01
+
+C:\Users\EZEN\Desktop\1208\01>mkdir js
+
+C:\Users\EZEN\Desktop\1208\01>cd js
+
+C:\Users\EZEN\Desktop\1208\01\js>code .

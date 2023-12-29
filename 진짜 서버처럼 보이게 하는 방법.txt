@@ -1,0 +1,11 @@
+
+
+
+진짜서버는 안니지만 서버처럼 보이게하는 방법
+
+깃허브를 만들고나서 db.json 올린다음  아래와 같이 새창에 확인해준다.
+https://my-json-server.typicode.com/ynshin100/shopping-musinsa
+
+
+ 마지막에 products 추가해서 다시 새창에 띄운다음 그주소로 쓰면된다 !
+

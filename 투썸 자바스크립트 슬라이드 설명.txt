@@ -1,0 +1,154 @@
+/*header*/
+const trigger = document.querySelector(".trigger");
+const dropmenu = document.querySelector(".dropmenu");
+const white = document.querySelector(".logo > a > .white");
+const black = document.querySelector(".logo > a > .black");
+const body = document.querySelector("body");
+const header = document.querySelector("header");
+
+trigger.addEventListener("click", (e) => {
+  trigger.classList.toggle("active");
+  dropmenu.classList.toggle("drop");
+
+  if (dropmenu.classList.contains("drop")) {
+    body.style.overflow = "hidden";
+    setTimeout(() => {
+      white.style.display = "block";
+      black.style.display = "none";
+    }, 300);
+  } else {
+    white.style.display = "none";
+    black.style.display = "block";
+    body.style.removeProperty("overflow");
+  }
+});
+
+/*sticky*/
+
+window.addEventListener("scroll", () => {
+  header.classList.toggle("sticky", window.scrollY > 0);
+
+  if (header.classList.contains("sticky")) {
+    white.style.display = "block";
+    black.style.display = "none";
+  } else {
+    white.style.display = "none";
+    black.style.display = "block";
+  }
+});
+
+// slide
+
+let slide;
+
+function initializeSwiper() {
+  if (!slide) {
+    slide = new Swiper(".swiper", {
+      slidesPerView: "5",
+      spaceBetween: 5,
+      loop: false,
+      pagination: true,
+      autoplay: {
+        delay: 2000, 
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  }
+}
+
+function destroySwiper() {
+  if (slide) {
+    slide.destroy();
+    slide = undefined;
+  }
+}
+
+
+initializeSwiper();
+
+// 현재: 창을 리사이징할 경우에는 swiper가 중단되지만 모바일화면에서 새로고침시에는 swiper script가 실행되어 ui가 틀어짐
+// 문제점: 기존에는 창을 리사이징할때만 swiper 실행/중단 여부를 판단하여 소스를 실행함 (line 78~84)
+// 해결방법: 리사이징할때와 동일하게 페이지가 로드되었을때에도 swiper 실행/중단 여부를 판단하여 소스를 실행해야함 (line 93~96)
+
+
+// ----------- 수정 전 -----------
+// window.addEventListener("resize", function () {
+//   if (window.innerWidth > 900) {
+//     initializeSwiper();
+//   } else {
+//     destroySwiper();
+//   }
+// });
+
+
+// ----------- 수정 후 -----------
+// 페이지 로딩완료시
+window.addEventListener("load", function () { // 페이지 로딩완료시
+  manageSwiper();
+});
+
+
+// 창 리사이징시
+window.addEventListener("resize", function () { // 창 리사이징시
+  manageSwiper();
+});
+
+// 같은소스를 총 2번 실행하기 때문에 효율성을 위해 함수로 만듬 (중복코드는 최대한 함수화시키는게 좋음)
+function manageSwiper() { 
+  // 같은 소스지만 가독성좋게 삼항연산자 처리 (모르면 구글링)
+  window.innerWidth > 900 ? initializeSwiper() : destroySwiper();
+}
+
+
+let modalpic = document.querySelector(".modalpic");
+let modalwordtop = document.querySelector(".modalword_top > h1");
+let modalsubtitle = document.querySelector(".modalword_top > span");
+let modaldesc = document.querySelector(".modalword_top > p");
+let modalallergy = document.querySelector(".modalword_top > h4");
+let tsd = document.querySelectorAll("#tsd4");
+let modal = document.querySelector(".modal");
+let closemodal = document.querySelector(".closemodal");
+
+let table = document.querySelectorAll(".table");
+const url = "menu_info.json";
+fetch(url)
+  .then((info) => info.json())
+  .then((info) => {
+    const infoData = info;
+
+    tsd.forEach((img, i) => {
+      img.addEventListener("click", () => {
+        modal.style.display = "block";
+
+        const infoDataI = infoData[i];
+        const nutrition = infoData[i].nutrition;
+
+        for (let a = 0; a < table.length; a++) {
+          table[a].innerHTML = nutrition[a];
+        }
+
+        modalwordtop.innerHTML = infoData[i].name;
+        modalsubtitle.innerHTML = infoData[i].engname;
+        modaldesc.innerHTML = infoData[i].description;
+        modalallergy.innerHTML = infoData[i].allergy;
+
+        modalpic.innerHTML = "";
+
+        const imgElement = document.createElement("img");
+        imgElement.src = infoData[i].image;
+        modalpic.appendChild(imgElement);
+      });
+    });
+  })
+  .catch((err) => {
+    console.log(err);
+  });
+
+
+closemodal.addEventListener("click", () => {
+  modal.style.display = "none";
+});

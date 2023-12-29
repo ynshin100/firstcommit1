@@ -1,0 +1,29 @@
+
+ƒ HTMLCollection() { [native code] }
+document
+#document<!DOCTYPE html><html lang=​"ko">​<head>​…​</head>​<body>​…​</body>​</html>​
+document.forms
+HTMLCollection [form]0: formlength: 1[[Prototype]]: HTMLCollection
+document.forms[0]
+<form>​…​</form>​
+document.forms[0].elements
+HTMLFormControlsCollection(3) [input, input, input.order]
+document.forms[0].elements[0]
+<input type=​"text" autofocus placeholder=​"아이디">​
+
+
+
+form태그는 배열 형식으로 가지고 온다
+
+
+a:는 #링크 / 외부페이지로 이동 시키게 하는 목적
+button는 이벤트 트리거 목적(*버튼을 클릭하면 어떤 액션 및 동작
+
+input:type=submit 사용자가 폼태크 안에 입력한  값을 서버로 전달하기 목적
+
+BOM Browser Object Model
+DOM  Document Object Model
+
+
+화살표 함수는 this 객체를 못쓴다.
+

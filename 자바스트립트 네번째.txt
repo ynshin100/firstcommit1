@@ -1,0 +1,12 @@
+
+
+DOM Tree-> 링크로 src로 이미지를 잡았을때
+
+
+secTnterral 일정시간 동안 반복
+
+
+clearInterval 반복실행을멈추가 하는 함수 
+
+setTimeout() 멈추게하는 함수
+

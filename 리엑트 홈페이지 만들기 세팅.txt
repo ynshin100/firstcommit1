@@ -1,0 +1,56 @@
+
+-route 설치r-
+npm install react-router-dom
+
+-bootstrap 설치-
+npm install react-bootstrap bootstrap
+
+-fontAsome 설치-
+npm i --save @fortawesome/fontawesome-svg-core
+npm install --save @fortawesome/free-solid-svg-icons
+npm install --save @fortawesome/react-fontawesome
+
+npm i --save @fortawesome/pro-solid-svg-icons
+npm i --save @fortawesome/pro-regular-svg-icons
+npm i --save @fortawesome/pro-light-svg-icons
+npm i --save @fortawesome/pro-duotone-svg-icons
+
+
+import { BrowserRouter } from "react-router-dom"; - index페이지에서 꼭 이걸 선언해줘야한다
+
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>  이렇게 세팅
+
+import { Routes, Route } from 'react-router-dom';    - App.js 에서는 이렇게 선언 !
+그리고 각가의 페이지 import 해준다
+
+`
+ <Routes>
+
+      <Route path='/' element={<ProductAll/>}/>     - Routes, Reoute는 App.js 에서 return 문 안에 세팅 ! 
+      <Route path='/login' element={<Login/>}/>
+      <Route path='/product/:id' element={<ProductDetail/>}/>
+    </Routes>  
+
+
+사전에 어떤 페이지가 필요한지 생각하고 아래와 같이 페이지를 만들어준다.
+
+Page
+Login
+ProductAll
+ProductDetail
+
+component
+Navbar
+ProductCard
+
+route
+PrivateRoute
+
+
+1행 4개의 열
+
+<Row>
+
+

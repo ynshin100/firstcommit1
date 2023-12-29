@@ -1,0 +1,50 @@
+
+PM이 팀원들과 함께 공유할 새폴더가 필요함 
+
+폴더 안에 공유할 폴더를 다시 생성
+
+깃에 가서 레파지토리를 생성
+
+ 
+내컴퓨터랑 해당 레파지토리 환경설정이 필요함 
+
+git config --global user.name  "id 입력 "
+git config --global user.email " 이메일 입력"
+git config --list
+
+
+
+
+나의 로컬 컴퓨터 git 초기롸'
+
+git init 
+git remote add origing - 팀포젝트 입력
+
+git remoe -v
+
+git add.
+
+git status
+
+git에 있는 데이터를 git 반드시 어떠한 이름으로 보낼껏 때 반드시 어떠한 이름으로 보낼 것인지 결정해야함
+
+git commit -m "2031106 ";
+git fulsh origin mster 
+
+ 
+팀원들이 작업할때 
+
+git full origin master
+
+
+git clone git@github.com: 해당PM폴더
+
+
+접근 불가될될때 
+
+ssh- keyzen
+ 
+ .ssh/id_ras
+
+
+

@@ -1,0 +1,21 @@
+
+
+
+querSelctor()2015년 이후 나온ES6 문법
+모두 가져오고싶다고했을때는 querySelctorAll  
+
+아이디인지클래스인지 확실하게 명시해야함, 후손선택자를 선택할 수 있다 .
+
+
+
+
+
+getElementByld() 
+getElementByClassName()
+getElementByTagName()
+
+
+getElementBy~~~는 후손선택자를 선택하지못한다 
+
+불편해!!!! 
+

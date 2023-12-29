@@ -1,0 +1,67 @@
+
+
+ 배포해보자 !!  deploy d
+
+
+dotHome 싼마이
+기간 호스팅종료!
+
+
+cafe24:  재작년에n인수
+1달간 무료=> 유료
+
+
+기간 눈치안보고,글로벌적이며 호스팅 ! 
+파이어베이스 !
+
+netlify : github 를 서버로 사용
+데이터 업로드
+호스팅 !! 
+github개발자들 코드 공유목적 용량제한 
+
+
+1. 구글에서파이어베이스 검색
+
+2.파이어베이스 시작
+
+3.파이어베이스 프로젝트 추가
+
+4.파이어베으스프로젝트이름 추가 
+
+5. 프로젝트 만들기 ( 영어로 쓰자 )
+
+6. 왼쪽  제품 카테고리-> 빌드-> 호스팅-> 시작하기에 나오는 호스팅 주소를복사
+
+윈도우 찾기에서 cmd 관리자 권한으로 실행 복사했던 호스팅 주소 입력 그러면 자동으로 설치가 된다.
+
+7. vs코드로 들어가서 터미널에 ` + ctrl에서  command prompt 터미널 변경
+
+8. 파이어베이스에 나타나는 로그인 주소를 복사하고 나서 command prompt 붙여넣기 
+파이어베이스 init 주소 붙여넣기  하면 
+파이어베이스 그림 나타나고  are you ready toproceed? yes 
+8개 선택 창에서 방향키를 밑으로 내려서 4번째인 호스팅 컴피규어 파일 어쩌구 선택 
+선택은 스페이스바 !! 엔터 ! 
+
+9.use an existing project 방금  만들어놓은 프로젝트 선택하고 엔터
+
+what do you wantto use  as your puvlic directory?? public 엔터 !
+
+configureas asingle-page app ?? no
+set up automomatic builds and git ?no
+
+
+Firebase initialization complete !
+
+public 페이지안에있는 것들 삭제 
+
+
+이미지요소들과 index.html ,sytle.css ,script.js. 을 public 페이지에 넣어준다
+그리고 정상작동하는 한번더 확인 
+
+파이어호스팅 하는 주소를 복사후 터미널에 입력 
+그러면 마지막에 호스팅 주소가 나온다 ! 
+
+ 
+ 
+ 
+

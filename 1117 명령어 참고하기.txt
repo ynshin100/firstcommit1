@@ -1,0 +1,465 @@
+Microsoft Windows [Version 10.0.19042.631]
+(c) 2020 Microsoft Corporation. All rights reserved.
+
+C:\Users\EZEN\Desktop\1117>cd "01ts
+
+C:\Users\EZEN\Desktop\1117\01ts>npm inti -y
+Unknown command: "inti"
+
+To see a list of supported npm commands, run:
+  npm help
+
+C:\Users\EZEN\Desktop\1117\01ts>init -y
+'init'은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는
+배치 파일이 아닙니다.
+
+C:\Users\EZEN\Desktop\1117\01ts>npm init -y
+Wrote to C:\Users\EZEN\Desktop\1117\01ts\package.json:
+
+{
+  "name": "01ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
+
+
+C:\Users\EZEN\Desktop\1117\01ts>npm i @types/node
+
+added 2 packages, and audited 3 packages in 766ms
+
+found 0 vulnerabilities
+
+C:\Users\EZEN\Desktop\1117\01ts>npm i typescript
+
+added 1 package, and audited 4 packages in 1s
+
+found 0 vulnerabilities
+
+C:\Users\EZEN\Desktop\1117\01ts>npm i ts-node
+
+added 17 packages, and audited 21 packages in 5s
+
+found 0 vulnerabilities
+
+C:\Users\EZEN\Desktop\1117\01ts>npm i ts-node -g
+
+changed 20 packages in 1s
+
+C:\Users\EZEN\Desktop\1117\01ts>tsc --init
+
+Created a new tsconfig.json with:                                                                            
+                                                                                                          TS 
+  target: es2016
+  module: commonjs
+  strict: true
+  esModuleInterop: true
+  skipLibCheck: true
+  forceConsistentCasingInFileNames: true
+
+
+You can learn more at https://aka.ms/tsconfig
+
+C:\Users\EZEN\Desktop\1117\01ts>npm run dev
+
+> 01ts@1.0.0 dev
+> ts-node src/index.ts
+
+hello
+
+C:\Users\EZEN\Desktop\1117\01ts>npm run bilde
+npm ERR! Missing script: "bilde"
+npm ERR!
+npm ERR! To see a list of scripts, run:
+npm ERR!   npm run
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\EZEN\AppData\Local\npm-cache\_logs\2023-11-17T00_14_47_154Z-debug-0.log
+
+C:\Users\EZEN\Desktop\1117\01ts>npm run buile   
+npm ERR! Missing script: "buile"
+npm ERR!
+npm ERR! Did you mean this?
+npm ERR!     npm run build # run the "build" package script
+npm ERR!
+npm ERR! To see a list of scripts, run:
+npm ERR!   npm run
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\EZEN\AppData\Local\npm-cache\_logs\2023-11-17T00_16_26_247Z-debug-0.log
+
+C:\Users\EZEN\Desktop\1117\01ts>npm run build
+
+> 01ts@1.0.0 build
+> tsc && node dist
+
+hello
+
+C:\Users\EZEN\Desktop\1117\01ts>npm run dev
+
+> 01ts@1.0.0 dev
+> ts-node src/index.ts
+
+사과
+
+C:\Users\EZEN\Desktop\1117\01ts>npm run dev
+
+> 01ts@1.0.0 dev
+> ts-node src/index.ts
+
+사과 복숭아
+
+C:\Users\EZEN\Desktop\1117\01ts>npm run dev
+
+> 01ts@1.0.0 dev
+> ts-node src/index.ts
+
+사과 복숭아
+봄 여름
+
+C:\Users\EZEN\Desktop\1117\01ts>npm run dev     
+
+> 01ts@1.0.0 dev
+> ts-node src/index.ts
+
+kim [ 'park', 'lee', 'choi' ]
+
+C:\Users\EZEN\Desktop\1117\01ts>npm run dev      
+
+> 01ts@1.0.0 dev
+> ts-node src/index.ts
+
+kim [ 'park', 'lee', 'choi' ]
+park 25
+
+C:\Users\EZEN\Desktop\1117\01ts>npm run dev
+
+> 01ts@1.0.0 dev
+> ts-node src/index.ts
+
+kim [ 'park', 'lee', 'choi' ]
+park 25
+홍길동 85 lee
+
+C:\Users\EZEN\Desktop\1117\01ts>ts-node src/index 03.ts
+kim [ 'park', 'lee', 'choi' ]
+park 25
+홍길동 85 lee
+
+C:\Users\EZEN\Desktop\1117\01ts>cd..
+
+C:\Users\EZEN\Desktop\1117>cd 01ts
+
+C:\Users\EZEN\Desktop\1117\01ts>ts-node src/index 03.ts
+kim [ 'park', 'lee', 'choi' ]
+park 25
+홍길동 85 lee
+
+C:\Users\EZEN\Desktop\1117\01ts>ts-node src/index 03.ts
+kim [ 'park', 'lee', 'choi' ]
+park 25
+홍길동 85 lee
+
+C:\Users\EZEN\Desktop\1117\01ts>ts-node src/index 03.ts
+kim [ 'park', 'lee', 'choi' ]
+park 25
+홍길동 85 lee
+
+C:\Users\EZEN\Desktop\1117\01ts>npm run dev
+
+> 01ts@1.0.0 dev
+> ts-node src/index03.ts
+
+node:internal/modules/cjs/loader:1078
+  throw err;
+  ^
+
+Error: Cannot find module './index03.ts'
+Require stack:
+- C:\Users\EZEN\Desktop\1117\01ts\src\imaginaryUncacheableRequireResolveScript
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Function.resolve (node:internal/modules/cjs/helpers:116:19)
+    at requireResolveNonCached (C:\Users\EZEN\Desktop\1117\01ts\node_modules\ts-node\dist\bin.js:549:16)     
+    at getProjectSearchDir (C:\Users\EZEN\Desktop\1117\01ts\node_modules\ts-node\dist\bin.js:519:40)
+    at phase3 (C:\Users\EZEN\Desktop\1117\01ts\node_modules\ts-node\dist\bin.js:267:27)
+    at bootstrap (C:\Users\EZEN\Desktop\1117\01ts\node_modules\ts-node\dist\bin.js:47:30)
+    at main (C:\Users\EZEN\Desktop\1117\01ts\node_modules\ts-node\dist\bin.js:33:12)
+    at Object.<anonymous> (C:\Users\EZEN\Desktop\1117\01ts\node_modules\ts-node\dist\bin.js:579:5)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\EZEN\\Desktop\\1117\\01ts\\src\\imaginaryUncacheableRequireResolveScript'
+  ]
+}
+
+Node.js v18.16.0
+
+C:\Users\EZEN\Desktop\1117\01ts>npm run dev
+
+> 01ts@1.0.0 dev
+> ts-node src/index03.ts
+
+node:internal/modules/cjs/loader:1078
+  throw err;
+  ^
+
+Error: Cannot find module './index03.ts'
+Require stack:
+- C:\Users\EZEN\Desktop\1117\01ts\src\imaginaryUncacheableRequireResolveScript
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Function.resolve (node:internal/modules/cjs/helpers:116:19)
+    at requireResolveNonCached (C:\Users\EZEN\Desktop\1117\01ts\node_modules\ts-node\dist\bin.js:549:16)     
+    at getProjectSearchDir (C:\Users\EZEN\Desktop\1117\01ts\node_modules\ts-node\dist\bin.js:519:40)
+    at phase3 (C:\Users\EZEN\Desktop\1117\01ts\node_modules\ts-node\dist\bin.js:267:27)
+    at bootstrap (C:\Users\EZEN\Desktop\1117\01ts\node_modules\ts-node\dist\bin.js:47:30)
+    at main (C:\Users\EZEN\Desktop\1117\01ts\node_modules\ts-node\dist\bin.js:33:12)
+    at Object.<anonymous> (C:\Users\EZEN\Desktop\1117\01ts\node_modules\ts-node\dist\bin.js:579:5)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\EZEN\\Desktop\\1117\\01ts\\src\\imaginaryUncacheableRequireResolveScript'
+  ]
+}
+
+Node.js v18.16.0
+
+C:\Users\EZEN\Desktop\1117\01ts>npm run dev
+
+> 01ts@1.0.0 dev
+> ts-node src/index03.ts
+
+node:internal/modules/cjs/loader:1078
+  throw err;
+  ^
+
+Error: Cannot find module './index03.ts'
+Require stack:
+- C:\Users\EZEN\Desktop\1117\01ts\src\imaginaryUncacheableRequireResolveScript
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Function.resolve (node:internal/modules/cjs/helpers:116:19)
+    at requireResolveNonCached (C:\Users\EZEN\Desktop\1117\01ts\node_modules\ts-node\dist\bin.js:549:16)     
+    at getProjectSearchDir (C:\Users\EZEN\Desktop\1117\01ts\node_modules\ts-node\dist\bin.js:519:40)
+    at phase3 (C:\Users\EZEN\Desktop\1117\01ts\node_modules\ts-node\dist\bin.js:267:27)
+    at bootstrap (C:\Users\EZEN\Desktop\1117\01ts\node_modules\ts-node\dist\bin.js:47:30)
+    at main (C:\Users\EZEN\Desktop\1117\01ts\node_modules\ts-node\dist\bin.js:33:12)
+    at Object.<anonymous> (C:\Users\EZEN\Desktop\1117\01ts\node_modules\ts-node\dist\bin.js:579:5)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\EZEN\\Desktop\\1117\\01ts\\src\\imaginaryUncacheableRequireResolveScript'
+  ]
+}
+
+Node.js v18.16.0
+
+C:\Users\EZEN\Desktop\1117\01ts>npm run dev
+
+> 01ts@1.0.0 dev
+> ts-node src/index02.ts
+
+
+C:\Users\EZEN\Desktop\1117\01ts>npm run dev
+
+> 01ts@1.0.0 dev
+> ts-node src/index02.ts
+
+
+C:\Users\EZEN\Desktop\1117\01ts>npm run build
+
+> 01ts@1.0.0 build
+> tsc && node dist
+
+kim [ 'park', 'lee', 'choi' ]
+park 25
+홍길동 85 lee
+
+C:\Users\EZEN\Desktop\1117\01ts>npm run dev
+
+> 01ts@1.0.0 dev
+> ts-node src/index02.ts
+
+
+C:\Users\EZEN\Desktop\1117\01ts>npm run dev
+
+> 01ts@1.0.0 dev
+> ts-node src/index03.ts
+
+node:internal/modules/cjs/loader:1078
+  throw err;
+  ^
+
+Error: Cannot find module './index03.ts'
+Require stack:
+- C:\Users\EZEN\Desktop\1117\01ts\src\imaginaryUncacheableRequireResolveScript
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Function.resolve (node:internal/modules/cjs/helpers:116:19)
+    at requireResolveNonCached (C:\Users\EZEN\Desktop\1117\01ts\node_modules\ts-node\dist\bin.js:549:16)
+    at getProjectSearchDir (C:\Users\EZEN\Desktop\1117\01ts\node_modules\ts-node\dist\bin.js:519:40)
+    at phase3 (C:\Users\EZEN\Desktop\1117\01ts\node_modules\ts-node\dist\bin.js:267:27)
+    at bootstrap (C:\Users\EZEN\Desktop\1117\01ts\node_modules\ts-node\dist\bin.js:47:30)
+    at main (C:\Users\EZEN\Desktop\1117\01ts\node_modules\ts-node\dist\bin.js:33:12)
+    at Object.<anonymous> (C:\Users\EZEN\Desktop\1117\01ts\node_modules\ts-node\dist\bin.js:579:5)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\EZEN\\Desktop\\1117\\01ts\\src\\imaginaryUncacheableRequireResolveScript'
+  ]
+}
+
+Node.js v18.16.0
+
+C:\Users\EZEN\Desktop\1117\01ts>npm run dev
+
+> 01ts@1.0.0 dev
+> ts-node src/index02.ts
+
+
+C:\Users\EZEN\Desktop\1117\01ts>npm run dev
+
+> 01ts@1.0.0 dev
+> ts-node src/index.ts
+
+{ name: 'jack', age: 32 }
+
+C:\Users\EZEN\Desktop\1117\01ts>npm run dev
+
+> 01ts@1.0.0 dev
+> ts-node src/index.ts
+
+{ name: 'jack', age: 32 }
+{ name: 'jack', age: 32 } { name: 'Apple Computer', age: 43 }
+
+C:\Users\EZEN\Desktop\1117\01ts>npm run dev
+
+> 01ts@1.0.0 dev
+> ts-node src/index.ts
+
+{ name: 'jack', age: 32 } { name: 'apply Computer', age: 43 }
+
+C:\Users\EZEN\Desktop\1117\01ts>npm run dev
+
+> 01ts@1.0.0 dev
+> ts-node src/index.ts
+
+jack 32
+
+C:\Users\EZEN\Desktop\1117\01ts>npm run dev
+
+> 01ts@1.0.0 dev
+> ts-node src/index.ts
+
+
+C:\Users\EZEN\Desktop\1117\01ts>npm run dev
+
+> 01ts@1.0.0 dev
+> ts-node src/index.ts
+
+{ addrss1: 'Gangnam-gu', addrss2: 'sinsa-gu', addrss3: '789 street' }
+
+C:\Users\EZEN\Desktop\1117\01ts>npm run dev
+
+> 01ts@1.0.0 dev
+> ts-node src/index.ts
+
+{ addrss1: 'Gangnam-gu', addrss2: 'sinsa-gu', addrss3: '789 street' }
+{ a: { x: 0 }, b: { y: 0 } }
+
+C:\Users\EZEN\Desktop\1117\01ts>npm run dev
+
+> 01ts@1.0.0 dev
+> ts-node src/index.ts
+
+{ addrss1: 'Gangnam-gu', addrss2: 'sinsa-gu', addrss3: '789 street' }
+{ x: 0, y: 0 }
+
+C:\Users\EZEN\Desktop\1117\01ts>npm run dev
+
+> 01ts@1.0.0 dev
+> ts-node src/index.ts
+
+{ addrss1: 'Gangnam-gu', addrss2: 'sinsa-gu', addrss3: '789 street' }
+{ x: 0, y: 0 }
+
+C:\Users\EZEN\Desktop\1117\01ts>npm run dev
+
+> 01ts@1.0.0 dev
+> ts-node src/index.ts
+
+{ addrss1: 'Gangnam-gu', addrss2: 'sinsa-gu', addrss3: '789 street' }
+{ x: 0, y: 0 }
+jack jack jack
+
+C:\Users\EZEN\Desktop\1117\01ts>npm run dev
+
+> 01ts@1.0.0 dev
+> ts-node src/index.ts
+
+{ addrss1: 'Gangnam-gu', addrss2: 'sinsa-gu', addrss3: '789 street' }
+{ x: 0, y: 0 }
+jack jack jack
+
+C:\Users\EZEN\Desktop\1117\01ts>ts-bide src/index04.ts
+'ts-bide'은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는
+배치 파일이 아닙니다.
+
+C:\Users\EZEN\Desktop\1117\01ts>ts-node src/index04.ts
+3
+
+C:\Users\EZEN\Desktop\1117\01ts>ts-node src/index05.ts 
+C:\Users\EZEN\Desktop\1117\01ts\src\index05.ts:9
+  return o.name;
+           ^
+TypeError: Cannot read properties of undefined (reading 'name')
+    at getName (C:\Users\EZEN\Desktop\1117\01ts\src\index05.ts:9:12)
+    at Object.<anonymous> (C:\Users\EZEN\Desktop\1117\01ts\src\index05.ts:13:9)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module.m._compile (C:\Users\EZEN\AppData\Roaming\npm\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\EZEN\AppData\Roaming\npm\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at phase4 (C:\Users\EZEN\AppData\Roaming\npm\node_modules\ts-node\src\bin.ts:649:14)
+
+C:\Users\EZEN\Desktop\1117\01ts>
+C:\Users\EZEN\Desktop\1117\01ts>
+C:\Users\EZEN\Desktop\1117\01ts>ts-node src/index05.ts
+unknown name
+
+C:\Users\EZEN\Desktop\1117\01ts>ts-node src/index05.ts
+unknown name
+park
+
+C:\Users\EZEN\Desktop\1117\01ts>ts-node src/index05.ts
+unknown name
+park
+0
+0
+32
+
+C:\Users\EZEN\Desktop\1117\01ts>ts-node src/index06.ts      
+3
+
+C:\Users\EZEN\Desktop\1117\01ts>ts-node src/index06.ts
+120
+
+C:\Users\EZEN\Desktop\1117\01ts>ts-node src/index06.ts
+120
+40
+
+C:\Users\EZEN\Desktop\1117\01ts>ts-node src/function-call.ts
+3
+
+C:\Users\EZEN\Desktop\1117\01ts>ts-node src/anonymous.ts
+3

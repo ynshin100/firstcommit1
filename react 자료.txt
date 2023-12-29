@@ -1,0 +1,23 @@
+*
+React 앱을 완성 ! 
+배보하게도니다면 ! html css js 프로젝트 배포
+npx run build "single Page Application "
+
+
+** App.js 심장부 ! (데이터를 수집 보관 처리 ! )
+
+처음에는 react 할때는 div로 리스트를 먼저 잡아본다음 작업하기 
+
+
+** FE UI 기능구현
+-CRUD 개념 입각해서 기능설계
+
+c:create
+> 사용자가 어떤 데이터를 입력하고,입력된 데이터가 내가 설계한 페이지에 출력
+React > useState / useRef /useEffect
+R:Read
+u:update
+d:delete
+
+사용자가 참여할 수 있는 페이지를 만들어본 경험이 있는지가 중요 ! 
+

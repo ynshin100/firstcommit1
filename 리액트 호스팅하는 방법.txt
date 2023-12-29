@@ -1,0 +1,30 @@
+
+
+1. 프로젝트 생성 
+2. vs 코드에서  > 터미널 : npm run build 
+(*React가 SPA : 하나의 프로젝트에 여러페이지가 존재하더라도 .html  확장자로 되어 있는 파일이 단일인 경우 
+
+3.탐색기 > 루트폴더 > build라는 폴더 생성 !
+4.파이어베이스 CLI 명령어를 하나씩 순서대로 vscode 터미널 입력
+
+5. 파이어베이스 CLI중 fiebase init에서 옵션 설정을 잘해야함 !! 
+다른 옵션은 html css js 만든 웹페이지의 호스팅과 동일하나 다른 몇 개의 옵션 설정 ! 
+
+what do you want to use as your public directory? build 
+
+configure as a single - page app (rewrite all urls to / index.html ?? yes
+
+
+만약 배포가 실패했을 경우에 출력도리 메세지가 담긴 index.html 파일을 build폴더 안에 덮어쓰기 하려는데 괜찮냐고 물어보는것임
+
+firebase deploy
+
+ ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+
+file build /index.html already exists . Overwrite ? no 
+? What do you want to use as your public directory? build
+? Configure as a single-page app (rewrite all urls to /index.html)? Yes
+? Set up automatic builds and deploys with GitHub? No
+? File build/index.html already exists. Overwrite? No
+
+참고 !! 

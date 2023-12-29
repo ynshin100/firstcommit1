@@ -1,0 +1,194 @@
+Microsoft Windows [Version 10.0.19042.631]
+(c) 2020 Microsoft Corporation. All rights reserved.
+
+C:\Users\EZEN\Desktop\1115>node -v
+v18.16.0
+
+C:\Users\EZEN\Desktop\1115>npm -v
+9.5.1
+
+C:\Users\EZEN\Desktop\1115>npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help init` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (1115)
+version: (1.0.0)
+description:
+entry point: (index.js)
+test command:
+git repository:
+keywords:
+author:
+license: (ISC)
+About to write to C:\Users\EZEN\Desktop\1115\package.json:
+
+{
+  "name": "1115",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
+
+
+Is this OK? (yes)
+
+C:\Users\EZEN\Desktop\1115>
+C:\Users\EZEN\Desktop\1115>y
+'y'은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는
+배치 파일이 아닙니다.
+
+C:\Users\EZEN\Desktop\1115>yes
+'yes'은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는
+배치 파일이 아닙니다.
+
+C:\Users\EZEN\Desktop\1115>
+C:\Users\EZEN\Desktop\1115>npm i @types/node
+
+added 2 packages, and audited 3 packages in 836ms
+
+found 0 vulnerabilities
+
+C:\Users\EZEN\Desktop\1115>npm i typescript -g
+
+added 1 package in 5s
+
+C:\Users\EZEN\Desktop\1115>npm i typescript   
+
+added 1 package, and audited 4 packages in 806ms
+
+found 0 vulnerabilities
+
+C:\Users\EZEN\Desktop\1115>node 01-typeScript/script.js
+hi,Typescrooooooooooooooo
+
+C:\Users\EZEN\Desktop\1115>tsc 01-typeScript/index.ts
+
+C:\Users\EZEN\Desktop\1115>npm i ts-node 
+
+added 17 packages, and audited 21 packages in 2s
+
+found 0 vulnerabilities
+
+C:\Users\EZEN\Desktop\1115>node scr/index.ts
+node:internal/modules/cjs/loader:1078
+  throw err;
+  ^
+
+Error: Cannot find module 'C:\Users\EZEN\Desktop\1115\scr\index.ts'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v18.16.0
+
+C:\Users\EZEN\Desktop\1115>ts-01-typeScript/index.ts
+'ts-01-typeScript'은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는
+배치 파일이 아닙니다.
+
+C:\Users\EZEN\Desktop\1115>ts-node 01-typeScript/index.ts
+'ts-node'은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는
+배치 파일이 아닙니다.
+
+C:\Users\EZEN\Desktop\1115>node -v
+v18.16.0
+
+C:\Users\EZEN\Desktop\1115>npm i ts-node -g
+
+added 20 packages in 2s
+
+C:\Users\EZEN\Desktop\1115>ts-node 01-typeScript/index.ts
+hi Typescript too!
+
+C:\Users\EZEN\Desktop\1115>npm run dev
+
+> 1115@1.0.0 dev
+> ts-node 01-typescript/index.ts
+
+hi Typescript too!
+
+C:\Users\EZEN\Desktop\1115>npm run build
+
+> 1115@1.0.0 build
+> tsc 01-typescript/index.ts
+
+
+C:\Users\EZEN\Desktop\1115>tsc --init
+
+Created a new tsconfig.json with:                                                                                       
+                                                                                                                     TS 
+  target: es2016
+  module: commonjs
+  strict: true
+  esModuleInterop: true
+  skipLibCheck: true
+  forceConsistentCasingInFileNames: true
+
+
+You can learn more at https://aka.ms/tsconfig
+
+C:\Users\EZEN\Desktop\1115>npm run build
+
+> 1115@1.0.0 build
+> tsc 01-typescript/index.ts
+
+
+C:\Users\EZEN\Desktop\1115>npm run dev
+
+> 1115@1.0.0 dev
+> ts-node 01-typescript/index01.ts
+
+
+C:\Users\EZEN\Desktop\1115>npm run dev
+
+> 1115@1.0.0 dev
+> ts-node 01-typescript/index01.ts
+
+person2 { name: 'jack', age: 32 }
+
+C:\Users\EZEN\Desktop\1115>npm run dev
+
+> 1115@1.0.0 dev
+> ts-node 01-typescript/index01.ts
+
+person2 { name: 'jack', age: 32 }
+Person4 { name: 'park', age: 20 }
+
+C:\Users\EZEN\Desktop\1115>
+
+
+package.json - 여기서 해당 폴더에 작업하는 것 수정해야함  dev / build
+
+{
+  "name": "1115",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node 01-typescript/index01.ts",
+    "build": "tsc 01-typescript/index.ts"
+  },
+  "author": "ynmpm",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^20.9.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}

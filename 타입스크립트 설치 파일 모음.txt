@@ -1,0 +1,13 @@
+
+npx create-react-app . --template typescript  타입스크립트를 리엑트로 설치
+
+npm install react-router-dom- 라우트 돔 설치 
+
+npm install styled-components - 스타일 컴포넌트 설치 
+
+npm install @types/styled-components 이것도 같이 설치 해줘야함 
+
+
+npm i react-query - 리액트 쿼리 설치 
+
+npm install recoil -리액트 리코일 설치

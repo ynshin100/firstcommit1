@@ -1,0 +1,7 @@
+
+
+크롬 확장프로그램 redux DevTools -next 설치
+
+npm install --save redux-devtools-extension - 리덕스툴을 보게끔해주는 명령어
+
+

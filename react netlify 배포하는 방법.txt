@@ -1,0 +1,36 @@
+
+
+
+ 새폴더 만든다음에 작업했던 파일들을 모두복사해서 새폴더에 붙여준다 
+
+git init 
+git remote add origin https://github.com/ynshin100/shopping-musinsa.git ( 내 레파지토리 주소 ) 
+git remote -v 
+
+git add . 
+
+git commit "211313"
+
+git push origin master
+
+
+다시 커맨드로 가서 npm run start 
+
+
+
+웹 퍼블리셔 프론트앤드가 사용하는 포폴 호스팅 4대장 
+
+파일질라- 무료지만 60일 그후는 유료
+카페24- 제일 쉽지만 기간제한과 수시로 단속 !
+파이어베이스
+netlify -간단하게 호스팅은 되고 기간제한도 없지만 용량제한이 있다. (깃허브와 잘맞음 ) 
+
+
+netlify로 호스팅하는 방법 
+로그인하고나서 브랜치설정 팀이름설정 
+
+CI-false npm run build -이렇게 바꿔주자 그리고 Deploy 하면됨
+
+
+
+
